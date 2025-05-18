@@ -25,14 +25,6 @@ const ClientSchema = new Schema({
 		type: Number,
 		default: 0
 	},
-	text: {
-		type: String,
-		required: true
-	},
-	score: {
-		type: Number,
-		required: true
-	},
 	orders: {
 		type: [Schema.Types.ObjectId],
 		ref: "orders",
